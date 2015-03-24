@@ -1,0 +1,18 @@
+[user]
+    name = Tom Barlow
+    email = tomwbarlow@gmail.com
+
+[github]
+    user = tombee
+
+[color]
+    ui = true
+
+[alias]
+    co = checkout
+    st = status
+    pull = pull --ff-only
+    merge = merge --no-ff
+
+[push]
+    default = current

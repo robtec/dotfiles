@@ -10,7 +10,7 @@ brew install node
 brew install tmux
 brew install fish 
 
-brew install brew-cask
+brew install caskroom/cask/brew-cask
 brew cask install google-chrome --appdir="/Applications"
 brew cask install google-drive --appdir="/Applications" --force
 brew cask install dropbox --appdir="/Applications" --force

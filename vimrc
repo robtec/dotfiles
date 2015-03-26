@@ -7,6 +7,7 @@ Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Blackrush/vim-gocode'
 Bundle 'scrooloose/nerdtree'
+Bundle 'rosstimson/bats.vim'
 call vundle#end() 
 
 syntax enable

@@ -23,6 +23,7 @@ brew cask install vlc --appdir="/Applications" --force
 brew cask install dwihn0r-keepassx --appdir="/Applications" --force
 brew cask install sublime-text3 --appdir="/Applications" --force
 brew cask install spotify --appdir="/Applications" --force
+brew cask install caskroom/homebrew-versions/java6
 brew cask install intellij-idea-ce --appdir="/Applications" --force
 brew cask install cyberduck --appdir="/Applications" --force
 

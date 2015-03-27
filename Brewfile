@@ -32,3 +32,6 @@ brew cask install keka --appdir="/Applications" --force
 # cleanup
 brew cleanup --force
 rm -f -r /Library/Caches/Homebrew/*
+
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish

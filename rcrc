@@ -1,2 +1,2 @@
 EXCLUDES="Brewfile rcrc"
-DOTFILES_DRS="$HOME/.dotfiles/vim"
+DOTFILES_DIRS="$HOME/.dotfiles/vim"

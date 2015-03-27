@@ -27,6 +27,7 @@ brew cask install caskroom/homebrew-versions/java6
 brew cask install intellij-idea-ce --appdir="/Applications" --force
 brew cask install java --force
 brew cask install cyberduck --appdir="/Applications" --force
+brew cask install keka --appdir="/Applications" --force
 
 # cleanup
 brew cleanup --force

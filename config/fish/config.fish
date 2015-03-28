@@ -1,7 +1,8 @@
 function devbox
     docker run -it \
         -v /Users/tbarlow/Dropbox/keys/ssh_tombee:/home/dev/.ssh \
-        -v /Users/tbarlow/dev/devbox-$argv[1]:/home/dev \
+        -v /Users/tbarlow/dev/devbox-$argv[1]:/home/dev/dev \
+        -v /var/run/docker.sock:/var/run/docker.sock \
         --name $argv[1] \
         --hostname $argv[1] \
         tombee/devbox

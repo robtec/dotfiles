@@ -16,6 +16,7 @@ colorscheme solarized
 
 set tabstop=4		" interpret tabs as 4 spaces
 set softtabstop=4	" use 4 spaces per tab
+set shiftwidth=4    " spaces inserted for indentation
 set expandtab		" convert tabs to spaces
 set number		" show line numbers
 set cursorline		" highlight current line

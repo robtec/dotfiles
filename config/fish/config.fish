@@ -1,7 +1,7 @@
 function devbox
     if math "1<" (count $argv) > /dev/null
             docker run -it \
-                -v /Users/tbarlow/Dropbox/keys/ssh_tombee:/home/dev/.ssh \
+                -v /Users/tbarlow/Dropbox/keys/ssh_tombee:/root/.ssh \
                 -v /var/run/docker.sock:/var/run/docker.sock \
                 --name $argv[1] \
                 --hostname $argv[1] \
@@ -9,7 +9,7 @@ function devbox
                 tombee/devbox
     else
             docker run -it \
-                -v /Users/tbarlow/Dropbox/keys/ssh_tombee:/home/dev/.ssh \
+                -v /Users/tbarlow/Dropbox/keys/ssh_tombee:/root/.ssh \
                 -v /var/run/docker.sock:/var/run/docker.sock \
                 --name $argv[1] \
                 --hostname $argv[1] \

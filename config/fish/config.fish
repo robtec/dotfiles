@@ -2,7 +2,6 @@ function devbox
     if math "1<" (count $argv) > /dev/null
             docker run -it \
                 -v /Users/tbarlow/Dropbox/keys/ssh_tombee:/home/dev/.ssh \
-                -v /Users/tbarlow/dev/devbox-$argv[1]:/home/dev/dev \
                 -v /var/run/docker.sock:/var/run/docker.sock \
                 --name $argv[1] \
                 --hostname $argv[1] \
@@ -11,12 +10,15 @@ function devbox
     else
             docker run -it \
                 -v /Users/tbarlow/Dropbox/keys/ssh_tombee:/home/dev/.ssh \
-                -v /Users/tbarlow/dev/devbox-$argv[1]:/home/dev/dev \
                 -v /var/run/docker.sock:/var/run/docker.sock \
                 --name $argv[1] \
                 --hostname $argv[1] \
                 tombee/devbox
     end
+end
+
+function shipyard_devbox
+    devbox shipyard -p 8080:8080 --link shipyard-rethinkdb:rethinkdb
 end
 
 function clean_old_docker_containers
